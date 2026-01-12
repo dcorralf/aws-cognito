@@ -1,7 +1,7 @@
-# Trigger lambda prerregistro con Cognito (Ejemplo 4)
+# Trigger lambda prerregistro con Cognito (Ejemplo 5)
 
 Ejemplo 5 de trigger o desencadenador lambda de prerregistro (utilizando sintaxis de módulos y Node 22.x).
-En este caso, cuando un usuario se registra se autoconfirma el email y el phone number (número teléfono) del usuario.
+En este caso, cuando un usuario se registra se autoconfirma el email y el phone number (número teléfono) del usuario si estos existen.
 
 
 ## Tecnologías 
@@ -11,11 +11,7 @@ En este caso, cuando un usuario se registra se autoconfirma el email y el phone 
 
 ## Cómo ejecutar el código
 
-Para ejecutar el código, sólo debemos cargar el fichero de la función lambda ("index.mjs") y configurar correctamente el trigger lambda de Cognito (trigger prerregistro).
-En esta ocasión veremos una función lambda que comprueba si el email del usuario ya está en uso por otro usuario, devolviendo un error si es el caso.
-
-Se incluye también el fichero con la política de permisos adicional para permitir a la función lambda listar usuarios de Cognito. En este
-caso teneis que especificar vuestro Account ID de vuestra cuenta de AWS dónde está indicado en la política.
+Para ejecutar el código, sólo debemos cargar el fichero de la función lambda ("index.mjs") y configurar correctamente el trigger lambda de Cognito (trigger prerregistro o presignup).
 
 
 ## Referencias
