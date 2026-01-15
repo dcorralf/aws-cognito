@@ -1,6 +1,4 @@
 
-import { CognitoIdentityProviderClient, ListUsersCommand } from "@aws-sdk/client-cognito-identity-provider";
-
 export const handler = async (event, context, callback) => {
 
   // Confirm the user
